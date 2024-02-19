@@ -1,4 +1,5 @@
 # Shell
+alias cdhome="cd ~/../../mnt/c/Users/mvm"
 alias cds="cd ~/code/statusphere/statusphere-web"
 alias cdss="cd ~/code/statusphere/status-shopify"
 alias cdc="cd ~/code/cision"

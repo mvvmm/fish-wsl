@@ -1,11 +1,12 @@
 # Shell
+alias cdhome="cd ~/../../mnt/c/Users/mvm"
 alias cds="cd ~/code/statusphere/statusphere-web"
 alias cdss="cd ~/code/statusphere/status-shopify"
 alias cdc="cd ~/code/cision"
-alias cdme="cd ~/documents/me"
+alias cdme="cd ~/home/documents/me"
 alias cdhiro="cd ~/code/masahirolamarsh/app"
-alias fishconfig="code ~/.config/fish"
-alias openme="open ~/documents/me"
+alias fishconfig="cd ~/.config/fish && code ."
+alias openme="explorer.exe ~/documents/me"
 alias reload="source ~/.config/fish/config.fish"
 alias mcserver="cd /Users/vance.morrison/me/mcserver && java -Xmx4096M -Xms4096M -jar server.jar --nogui"
 alias c="clear"
@@ -27,12 +28,11 @@ alias gp="git fetch && git pull"
 alias notebook="jupyter notebook"
 
 # Use java version 17
-set -x JAVA_HOME (/usr/libexec/java_home -v 17)
+# set -x JAVA_HOME (/usr/libexec/java_home -v 17)
 
-
-if status is-interactive
-	# Commands to run in interactive sessions can go here
-end
+# if status is-interactive
+# 	# Commands to run in interactive sessions can go here
+# end
 
 starship init fish | source
 set fish_greeting
@@ -42,12 +42,3 @@ set fish_greeting
 # !! Contents within this block are managed by 'conda init' !!
 # eval /Users/mvm/opt/anaconda3/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
-
-
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-set --export --prepend PATH "/Users/vance.morrison/.rd/bin"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/vance.morrison/google-cloud-sdk/path.fish.inc' ]; . '/Users/vance.morrison/google-cloud-sdk/path.fish.inc'; end
-fish_add_path /Users/vance.morrison/.spicetify
-fish_add_path /Users/vance.morrison/
